@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>단어장 만들기</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+      #order {
+        display: inline-block;
+        width: 20px;
+        border: 2px solid yellowgreen;
+      }
+      #english {
+        display: inline-block;
+        width: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>나의 단어장 모두 출력</h2>
+    <hr />
+    <div id="list"></div>
+    <script type="text/javascript">
+      for (let i = 0; i < localStorage.length; i++) {
+        let key = localStorage.key(i);
+        let value = localStorage.getItem(key);
+        const list = document.getElementById('list');
+        list.innerHTML += `<span id="order">${
+          i + 1
+        }</span> <span id="english">${key}</span> <span id="korean">${value}</span><br>`;
+      }
+    </script>
+  </body>
+</html>
