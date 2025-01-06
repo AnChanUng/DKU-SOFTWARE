@@ -1,1 +1,1 @@
-# 단국대학교 소프트웨어학과 전공수업
+## Dankook UniverSity Software
