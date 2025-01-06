@@ -1,1 +1,1 @@
-## Dankook UniverSity Software
+DKU SOFTWARE
